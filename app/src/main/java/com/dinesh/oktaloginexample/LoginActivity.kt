@@ -30,8 +30,8 @@ class LoginActivity : AppCompatActivity() {
     private fun setupViews() {
         binding.signInButtonGoogle.setOnClickListener {
             val payload = AuthenticationPayload.Builder()
-                .setIdp("0oa5rjlyf2ngIx0265d7") // From your "Okta" admin console
-
+//                .setIdp("0oa5rjlyf2ngIx0265d7") // From your "Okta" admin console
+                .setIdp("0oa5upbqcb1iVpKj65d7")
                 .build()
 
             oktaManager.signIn(this, payload)

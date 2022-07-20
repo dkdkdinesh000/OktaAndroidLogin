@@ -23,11 +23,18 @@ class OktaManager(applicationContext: Context) {
     private var sessionClient: SessionClient
 
     init {
+//        val config = OIDCConfig.Builder()
+//            .clientId("0oa5r75k1gkJkrpE65d7")
+//            .discoveryUri("https://dev-38379248.okta.com")
+//            .redirectUri("com.okta.dev-38379248:/callback")
+//            .endSessionRedirectUri("com.okta.dev-38379248:/")
+//            .scopes("openid", "profile", "offline_access")
+//            .create()
         val config = OIDCConfig.Builder()
-            .clientId("0oa5r75k1gkJkrpE65d7")
-            .discoveryUri("https://dev-38379248.okta.com")
-            .redirectUri("com.okta.dev-38379248:/callback")
-            .endSessionRedirectUri("com.okta.dev-38379248:/")
+            .clientId("0oa5upbailCvAYSoJ5d7")
+            .discoveryUri("https://dev-79231153.okta.com")
+            .redirectUri("com.okta.dev-79231153:/callback")
+            .endSessionRedirectUri("com.okta.dev-79231153:/")
             .scopes("openid", "profile", "offline_access")
             .create()
         webAuth = Okta.WebAuthBuilder()
